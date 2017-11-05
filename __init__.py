@@ -15,7 +15,7 @@ def index():
 
 @app.route('/form',methods=['GET','POST'])
 def form():
-	return render_template('form.html')
+	return render_template('tech_reg(2).html')
 
 @app.route('/form_main',methods=['GET','POST'])
 def form_main():
@@ -23,8 +23,8 @@ def form_main():
 	
 @app.route('/form_submit',methods=['GET','POST'])
 def form_submit():
-	a = request.form['form-contact-name']
-	print a
+	# a = request.form['form-contact-name']
+	print request
 	return "hi"
 
 @app.route('/form_data',methods=['POST','GET'])

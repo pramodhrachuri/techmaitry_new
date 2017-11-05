@@ -102,7 +102,7 @@
 
 
 <!-- MAIN BODY -->
-    <!-- <link href="static/css/materialize.css" rel="stylesheet"> -->
+    <link href="static/css/style_form.css" rel="stylesheet">
     <section class="section mb-5 pt-5">
 
     <!--Grid row-->
@@ -118,72 +118,183 @@
                         <div class="card-body form">
                             <!--Header-->
                             <div class="formHeader mb-1 pt-3">
-                                <h3><i class="fa fa-envelope"></i> Techmaitry Registration</h3>
+                                <h3><i class="fa fa-envelope"></i> Tech Registration</h3>
                             </div>
 
                             <br>
-                                <form action="/form_submit" method="POST">
-                                    <div class="row">
-                                        <!--Grid column-->
-                                        <div class="col-md-6">
-                                            <div class="md-form">
-                                                <div class="md-form">
-                                                    <input type="text" id="form-contact-name" name="form-contact-name" class="form-control" value="">
-                                                    <label for="form-contact-name" class="">Name</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Grid column-->
 
-                                        <!--Grid column-->
-                                        <div class="col-md-6">
+                            <form action="{{url_for('form_submit')}}">
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
                                             <div class="md-form">
-                                                <div class="md-form">
-                                                    <input type="text" id="form-contact-email" name="form-contact-email" class="form-control">
-                                                    <label for="form-contact-email" class="">College</label>
-                                                </div>
+                                                <input type="text" id="form-contact-name" name="form-contact-name" class="form-control" value="">
+                                                <label for="form-contact-name" class="">Name</label>
                                             </div>
                                         </div>
-                                        <!--Grid column-->
                                     </div>
-                                    <div class="row">
-                                        <!--Grid column-->
-                                        <div class="col-md-6">
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
                                             <div class="md-form">
-                                                <div class="md-form">
-                                                    <input type="text" id="form-contact-phone" class="form-control">
-                                                    <label for="form-contact-phone" class="">Mobile No.</label>
-                                                </div>
+                                                <input type="text" id="form-contact-email" name="form-contact-email" class="form-control">
+                                                <label for="form-contact-email" class="">College</label>
                                             </div>
                                         </div>
-                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid column-->
 
-                                        <!--Grid column-->
-                                        <div class="col-md-6">
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
                                             <div class="md-form">
-                                                <div class="md-form">
-                                                    <input type="text" id="form-contact-company" class="form-control">
-                                                    <label for="form-contact-company" class="">Email Id</label>
-                                                </div>
+                                                <input type="text" id="form-contact-phone" class="form-control">
+                                                <label for="form-contact-phone" class="">Mobile No.</label>
                                             </div>
                                         </div>
-                                        <!--Grid column-->
                                     </div>
+                                    <!--Grid column-->
 
-
-
-
-                                    <div class="text-center">
-                                        <button class="btn">Login</button>
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <div class="md-form">
+                                                <input type="text" id="form-contact-company" class="form-control">
+                                                <label for="form-contact-company" class="">Email Id</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </form>
-                            <!-- <iframe src="/form_main" style="width: 100%; border-width: 0px; overflow-x:hidden;" onload="resizeIframe(this)" scrolling="no"></iframe>
-                            <script type="text/javascript">
-                              function resizeIframe(obj){
-                                 obj.style.height = 0;
-                                 obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-                              }
-                            </script> -->
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+                            
+                                    <div class="col-md-12">
+
+                                
+                                        <!--Accordion wrapper-->
+<div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+    <!-- Code Crusade one Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingOne">
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0">
+                    Competitions:<i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-body">
+            <div class="md-form">
+      <p>
+    <input type="checkbox" id="codeCrusade" />
+    <label for="codeCrusade">Code Crusade</label>
+  </p>
+    <p>
+    <input type="checkbox" id="quizFire" />
+    <label for="quizFire">Quizzz Fire</label>
+  </p>
+      <input placeholder="Team Name" type="hidden" id="tmQuizFire" class="form-control">
+      <p>
+    <input type="checkbox" id="roboSoccer" />
+    <label for="roboSoccer">Robo Soccer</label>
+  </p>
+        <input placeholder="Team Name" type="hidden" id="tmRoboSoccer" class="form-control">
+      <p>
+    <input type="checkbox" id="fireBall" />
+    <label for="fireBall">Fire Ball</label>
+  </p>
+      <p>
+    <input type="checkbox" id="webRiddle" />
+    <label for="webRiddle">Web Riddle</label>
+  </p>
+</div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+
+    <!-- Two Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingTwo">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="mb-0">
+                    Workshops:<i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-body">
+          <div class="md-form">
+                <p>
+    <input type="checkbox" id="Robotics" />
+    <label for="Robotics">Robotics</label>
+  </p>
+          <input placeholder="Team Name" type="hidden" id="tmRobotics" class="form-control">
+
+      <p>
+    <input type="checkbox" id="iot" />
+    <label for="iot">Internet of Things(IoT)</label>
+  </p>
+
+</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+    
+
+
+</div>
+<!--/.Accordion wrapper-->
+                                    </div>
+                                </div>
+                                <br>
+                                 <br>
+                                <div class="row">
+                                    <div class="col-md-12">
+    <div class="form-group">
+      <p>
+    <input type="checkbox" id="Interested" />
+    <label for="Interested">Interested for lunch at IIT Bhilai</label>
+  </p>
+  </div>
+                                    </div>
+                                </div><br>
+                                <div class="row">
+                                <div class="col-md-4">
+                         <div class="text-center mb-3">
+                <input type="submit" class="btn btn-block btn-rnd z-depth-1a"></input>
+            </div>
+            </div>
+
+                                </div>
+                                <!--Grid row-->
+                            </form>
+
                         </div>
                     </div>
 
@@ -199,7 +310,6 @@
     <!--Grid row-->
 </div>
 </section>
-<script type="text/javascript" src="static/js/materialize.min.js"></script>
 <!-- MAIN BODY closed -->
                 <!-- </main> -->
                 <!--Main layout-->
