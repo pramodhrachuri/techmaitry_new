@@ -1,0 +1,117 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/1.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (42).jpg")no-repeat center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+.navbar {
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #212121;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #212121;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #contact,#workshop,#competition,#gaming,#gallery
+    {
+        background-color: #000;
+    }
+    /*#techmaitry_main{
+        padding-top: 1cm;
+    }*/
+}
+
+@media (min-width: 768px)
+{
+    #contact{
+        background: url("../img/CONTACT/homepage_backgroung.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #workshop{
+        background: url("../img/WORKSHOP/homepage_backgroung.JPG")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #competition{
+        background: url("../img/COMPETITIONS/homepage_backgroung.JPG")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #gaming{
+        background: url("../img/GAMING/homepage_backgroung.JPG")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #gallery{
+        background: url("../img/GALLERY/homepage_backgroung.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+#registration{
+    background: url("../img/REGISTRATION/homepage_backgroung.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#contact{
+    margin-bottom: -20px;
+}
+
+#hoveryellow :hover{
+    color:yellow;
+}
+
+#hoverfacebook :hover{
+    color:#5054B4;
+}
+
+#hovertwitter :hover{
+    color:#3191F6;
+}
+
+#hoverinstagram :hover{
+    color:#FC3541;
+}
