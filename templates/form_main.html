@@ -1,0 +1,46 @@
+<link href="static/css/materialize.min.css" rel="stylesheet">
+<form>
+    <div class="row">
+        <div class="input-field col s6">
+          <input id="Name" type="text" class="validate">
+          <label for="Name" class="active">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="Email" type="text" class="validate">
+          <label for="Email" class="active">Email</label>
+        </div>
+        <div class="input-field col s6">
+          <input  id="phone_number" type="text" class="validate">
+          <label for="phone_number" class="active">Phone Number</label>
+        </div>
+        <div class="input-field col s6">
+          <!-- <input id="college" type="text" class="validate"> -->
+          <input id="college" type="text" class="validate">
+          <label for="college" class="active">College</label>
+        </div>
+        <div>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+        </div>
+    </div>
+</form>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+</script>
