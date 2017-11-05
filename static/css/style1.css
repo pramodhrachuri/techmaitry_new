@@ -1,0 +1,66 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (42).jpg")no-repeat center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+.navbar {
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #212121;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #212121;
+    }
+}
+
+#workshop, #competition, #gaming, #contact{
+    background: url("/home/pradeep/Desktop/tech_fest/tech2/img/4.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#contact{
+    margin-bottom: -20px;
+}
+.blclr{
+        background: #0d47a1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #0d47a1 , #90caf9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #0d47a1, #90caf9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #0d47a1, #90caf9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #0d47a1 , #90caf9); /* Standard syntax */
+}
+.btn-rnd{
+    border-radius: 30px;
+        background: #0d47a1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #0d47a1 , #90caf9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #0d47a1, #90caf9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #0d47a1, #90caf9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #0d47a1 , #90caf9); /* Standard syntax */
+}
