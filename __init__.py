@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.4s
 
-from flask import Flask,render_template,request,send_from_directory,session,redirect,url_for,json
+from flask import Flask,render_template,request,send_from_directory,session,redirect,url_for,json,flash
 from flask import request
 
 
@@ -23,8 +23,8 @@ def form_main():
 	
 @app.route('/form_submit',methods=['GET','POST'])
 def form_submit():
-	# a = request.form['form-contact-name']
-	print request
+	a = request.form['personname']
+	print a
 	return "hi"
 
 @app.route('/form_data',methods=['POST','GET'])
@@ -35,6 +35,20 @@ def form_data():
 	f = open('abc.txt','a')
 	f.write('Data: '+firstname+" "+lastname+" "+phno+"\n")
 	return ('I got '+firstname+" "+lastname+" "+phno)
+
+@app.route('/registration', methods=['GET', 'POST'])
+def registration():
+    if request.method == 'POST':
+        Name = request.form['Name']
+        college = request.form['college']
+        Mobile = request.form['Mobile']
+        e_mail = request.form['e_mail']
+        print(Name, college, Mobile, e_mail)
+        flash('success', 'success')
+        return redirect(url_for('registration'))
+    else:
+        return render_template('yup.html')
+
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0',port=9876,debug=True)

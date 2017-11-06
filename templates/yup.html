@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<div class="container">
+<div class="jumbotron">
+<!-- <h2>Join the game</h2> -->
+<form action="" method="post">
+    <div class="form-group">
+        <input  style="width: 300px" type="text" name="Name" placeholder="Name" class="form-control" value={{request.form.Name}}>
+    </div>
+    <div class="form-group">
+        <input style="width: 300px" type="text" name="college" placeholder="College" class="form-control" value={{request.form.college}}>
+    </div>
+    <div class="form-group" >
+        <input  style="width: 300px" type="text" name="Mobile" placeholder="Contact No." class="form-control" value={{request.form.Mobile}}>
+    </div>
+    <div class="form-group">
+        <input style="width: 300px" type="text" name="e_mail" placeholder="E-mail" class="form-control" value={{request.form.e_mail}}>
+    </div>
+    <input type="checkbox" name="code_crusade" value="code_crusade" checked> Code Crusade
+    <input type="checkbox" name="quiz_fire" value="quiz_fire" checked> Quiz Fire
+    <input type="checkbox" name="fireball" value="fireball" checked> FireBall
+    <input type="checkbox" name="webriddle" value="webriddle" checked> Web Riddle
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+{% endblock%}
+
+<!--
+    <input type="checkbox" name="match" value="matchwithpairs" checked> Auto Match
+    <input type="checkbox" name="match" value="matchwithpairs" checked> Auto Match
+    <input type="checkbox" name="match" value="matchwithpairs" checked> Auto Match
+    <input type="checkbox" name="match" value="matchwithpairs" checked> Auto Match
+    -->
