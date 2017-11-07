@@ -50,6 +50,24 @@ header,
     }*/
 }
 
+@media (max-width: 768px)
+{
+  #mainlogo
+  {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px)
+{
+  #mainlogo
+  {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 @media (min-width: 768px)
 {
     #contact{
