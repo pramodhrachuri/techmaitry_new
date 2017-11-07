@@ -54,19 +54,20 @@ header,
 {
   #mainlogo
   {
-    width: 100px;
-    height: 100px;
+    width: 100px !important;
+    height: 100px !important;
+
   }
 }
 
-@media (min-width: 768px)
+/*@media (min-width: 768px)
 {
   #mainlogo
   {
     width: 350px;
     height: 350px;
   }
-}
+}*/
 
 @media (min-width: 768px)
 {
